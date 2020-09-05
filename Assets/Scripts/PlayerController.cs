@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
         float yInput = Input.GetAxis("Vertical");
         Vector3 moveInput = new Vector3(xInput, 0, yInput);
 
-        // Add force to the player
+        // Change the player's velocity
         rb.velocity = moveInput * moveSpeed;
     }
 
